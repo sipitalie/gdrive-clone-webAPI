@@ -53,7 +53,7 @@ describe('#Route test swite.', () => {
             const params = { ...defaulParams }
             params.request.method = 'inexistent'
             await routes.handler(...params.values())
-            expect(params.response.setHeader).toHaveBeenCalledWith('Access-Controll-Allow-Origin', '*')
+            expect(params.response.setHeader).toHaveBeenCalledWith('Access-Control-Allow-Origin', '*')
         })
 
         //dado método OPTIONS deve escolher opções de rota

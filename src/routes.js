@@ -65,7 +65,7 @@ export default class Routes {
     }
 
     handler(request, response) {
-        response.setHeader('Access-Controll-Allow-Origin', '*')
+        response.setHeader("Access-Control-Allow-Origin", "*")
         const chosen = this[request.method.toLowerCase()] || this.defaulRoute
         return chosen.apply(this, [request, response])
 

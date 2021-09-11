@@ -9,8 +9,6 @@ import {
     beforeAll,
     afterAll
 } from '@jest/globals'
-
-import FileHelper from '../../src/fileHelper.js';
 import Routes from '../../src/routes.js'
 import TestUtil from '../_util/testUtil.js';
 import { logger } from '../../src/logger.js';
