@@ -28,7 +28,7 @@ export default class UploadHandler {
                 }
                 this.lastMessageSent = Date.now()
                 this.io.to(this.socketId).emit(this.ON_OPLOAD_EVENT, { processedAllready, filename })
-                logger.info(`Info: file [${filename}] got ${processedAllready} bytes to ${this.socketId}`)
+                logger.info(`file [${filename}] got ${processedAllready} bytes to ${this.socketId}`)
             }
         }
         return handleData.bind(this)
